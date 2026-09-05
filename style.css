@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505;
+    color: white;
+}
+
+
+/* =========================
+   WELCOME SECTION
+========================= */
+
+.welcome {
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.90),
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 30px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+.logo span {
+    color: #e63946;
+}
+
+.nav-right {
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    color: #bbb;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.welcome-content {
+    margin-left: 9%;
+
+    max-width: 700px;
+
+    animation: fadeUp 1.2s ease;
+}
+
+.subtitle {
+    font-size: 13px;
+
+    letter-spacing: 7px;
+
+    color: #e63946;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(65px, 10vw, 150px);
+
+    line-height: 0.9;
+
+    letter-spacing: -5px;
+
+    font-weight: 900;
+}
+
+h1 span {
+    color: #e63946;
+}
+
+.tagline {
+    margin-top: 25px;
+
+    font-size: 17px;
+
+    letter-spacing: 6px;
+
+    color: #ddd;
+}
+
+.description {
+    margin-top: 25px;
+
+    max-width: 550px;
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    margin-top: 35px;
+
+    padding: 16px 30px;
+
+    background: #e63946;
+
+    border: none;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button span {
+    margin-left: 15px;
+
+    font-size: 18px;
+}
+
+button:hover {
+    background: #ff4b59;
+
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.bottom-text {
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 6%;
+
+    right: 6%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #777;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .nav-right {
+        display: none;
+    }
+
+    .welcome-content {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    h1 {
+        font-size: 70px;
+        letter-spacing: -3px;
+    }
+
+    .tagline {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .bottom-text {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+}

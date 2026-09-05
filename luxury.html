@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarVerse | Luxury Cars</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="luxury.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="luxury-navbar">
+
+        <a href="home.html" class="luxury-logo">
+            CAR<span>VERSE</span>
+        </a>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="home.html#models">Models</a>
+            <a href="luxury.html" class="active">Luxury</a>
+        </nav>
+
+        <a href="home.html#models" class="back-btn">
+            ← Models
+        </a>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="luxury-hero">
+
+        <div class="luxury-hero-content">
+
+            <p>LUXURY COLLECTION</p>
+
+            <h1>
+                ELEGANCE<br>
+                <span>IN MOTION.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover the world's most sophisticated automobiles,
+                where craftsmanship, technology and performance
+                come together.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARS -->
+
+    <section class="luxury-cars">
+
+        <div class="page-heading">
+
+            <p>THE COLLECTION</p>
+
+            <h2>
+                LUXURY <span>MACHINES</span>
+            </h2>
+
+        </div>
+
+
+        <div class="luxury-grid">
+
+
+            <!-- CAR 1 -->
+
+            <article class="luxury-card">
+
+                <div class="car-image mercedes"></div>
+
+                <div class="car-content">
+
+                    <p class="brand">
+                        MERCEDES-BENZ
+                    </p>
+
+                    <h3>S-Class</h3>
+
+                    <p class="description">
+                        The definition of modern luxury,
+                        combining refined comfort with
+                        advanced technology.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>3.0L</strong>
+                            <span>Engine</span>
+                        </div>
+
+                        <div>
+                            <strong>375 HP</strong>
+                            <span>Power</span>
+                        </div>
+
+                        <div>
+                            <strong>250</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Mercedes-Benz S-Class')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 2 -->
+
+            <article class="luxury-card">
+
+                <div class="car-image bmw"></div>
+
+                <div class="car-content">
+
+                    <p class="brand">
+                        BMW
+                    </p>
+
+                    <h3>7 Series</h3>
+
+                    <p class="description">
+                        A sophisticated combination of
+                        luxury, innovation and powerful
+                        driving dynamics.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>3.0L</strong>
+                            <span>Engine</span>
+                        </div>
+
+                        <div>
+                            <strong>375 HP</strong>
+                            <span>Power</span>
+                        </div>
+
+                        <div>
+                            <strong>250</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('BMW 7 Series')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 3 -->
+
+            <article class="luxury-card">
+
+                <div class="car-image audi"></div>
+
+                <div class="car-content">
+
+                    <p class="brand">
+                        AUDI
+                    </p>
+
+                    <h3>A8</h3>
+
+                    <p class="description">
+                        German precision meets elegant
+                        design in Audi's flagship luxury sedan.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>3.0L</strong>
+                            <span>Engine</span>
+                        </div>
+
+                        <div>
+                            <strong>335 HP</strong>
+                            <span>Power</span>
+                        </div>
+
+                        <div>
+                            <strong>250</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Audi A8')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 4 -->
+
+            <article class="luxury-card">
+
+                <div class="car-image bentley"></div>
+
+                <div class="car-content">
+
+                    <p class="brand">
+                        BENTLEY
+                    </p>
+
+                    <h3>Continental GT</h3>
+
+                    <p class="description">
+                        Handcrafted luxury combined with
+                        extraordinary grand-touring performance.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>4.0L</strong>
+                            <span>Engine</span>
+                        </div>
+
+                        <div>
+                            <strong>542 HP</strong>
+                            <span>Power</span>
+                        </div>
+
+                        <div>
+                            <strong>318</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Bentley Continental GT')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 5 -->
+
+            <article class="luxury-card">
+
+                <div class="car-image porsche"></div>
+
+                <div class="car-content">
+
+                    <p class="brand">
+                        PORSCHE
+                    </p>
+
+                    <h3>Panamera</h3>
+
+                    <p class="description">
+                        A luxury performance sedan designed
+                        for both comfort and exhilarating driving.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>2.9L</strong>
+                            <span>Engine</span>
+                        </div>
+
+                        <div>
+                            <strong>348 HP</strong>
+                            <span>Power</span>
+                        </div>
+
+                        <div>
+                            <strong>270</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Porsche Panamera')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 6 -->
+
+            <article class="luxury-card">
+
+                <div class="car-image rolls"></div>
+
+                <div class="car-content">
+
+                    <p class="brand">
+                        ROLLS-ROYCE
+                    </p>
+
+                    <h3>Phantom</h3>
+
+                    <p class="description">
+                        An icon of bespoke luxury,
+                        extraordinary craftsmanship and presence.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>6.75L</strong>
+                            <span>Engine</span>
+                        </div>
+
+                        <div>
+                            <strong>563 HP</strong>
+                            <span>Power</span>
+                        </div>
+
+                        <div>
+                            <strong>250</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Rolls-Royce Phantom')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="luxury-footer">
+
+        <h2>
+            CAR<span>VERSE</span>
+        </h2>
+
+        <p>
+            WHERE CARS MEET PHOTOGRAPHY.
+        </p>
+
+        <small>
+            © 2026 CarVerse
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

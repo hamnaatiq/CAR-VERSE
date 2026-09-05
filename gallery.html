@@ -1,0 +1,604 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CarVerse | Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="gallery-navbar">
+
+        <a href="home.html" class="gallery-logo">
+            CAR<span>VERSE</span>
+        </a>
+
+
+        <nav>
+
+            <a href="home.html">
+                Home
+            </a>
+
+            <a href="home.html#models">
+                Models
+            </a>
+
+            <a href="gallery.html" class="active">
+                Gallery
+            </a>
+
+        </nav>
+
+
+        <a href="home.html" class="back-btn">
+            ← Home
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="gallery-hero">
+
+        <div class="gallery-hero-content">
+
+            <p>
+                CAR PHOTOGRAPHY
+            </p>
+
+
+            <h1>
+
+                CAPTURED<br>
+
+                <span>IN MOTION.</span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                A visual collection of beautiful machines,
+                dramatic roads and unforgettable moments.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+
+    <section class="gallery-section">
+
+
+        <div class="gallery-heading">
+
+            <p>
+                THE ARCHIVE
+            </p>
+
+
+            <h2>
+
+                CAR <span>GALLERY</span>
+
+            </h2>
+
+        </div>
+
+
+
+        <!-- FILTER BUTTONS -->
+
+        <div class="gallery-filters">
+
+            <button class="filter-btn active"
+                    onclick="filterGallery('all')">
+
+                ALL
+
+            </button>
+
+
+            <button class="filter-btn"
+                    onclick="filterGallery('luxury')">
+
+                LUXURY
+
+            </button>
+
+
+            <button class="filter-btn"
+                    onclick="filterGallery('sports')">
+
+                SPORTS
+
+            </button>
+
+
+            <button class="filter-btn"
+                    onclick="filterGallery('jdm')">
+
+                JDM
+
+            </button>
+
+
+            <button class="filter-btn"
+                    onclick="filterGallery('classic')">
+
+                CLASSIC
+
+            </button>
+
+
+            <button class="filter-btn"
+                    onclick="filterGallery('suv')">
+
+                SUV
+
+            </button>
+
+
+            <button class="filter-btn"
+                    onclick="filterGallery('supercar')">
+
+                SUPERCARS
+
+            </button>
+
+        </div>
+
+
+
+        <!-- PHOTO GRID -->
+
+        <div class="photo-grid">
+
+
+            <!-- PHOTO 1 -->
+
+            <article class="photo-card luxury">
+
+                <img
+                    src="https://images.unsplash.com/photo-1563720223185-11003d516935"
+                    alt="Luxury car">
+
+                <div class="photo-overlay">
+
+                    <div>
+
+                        <span>
+                            LUXURY
+                        </span>
+
+                        <h3>
+                            Elegance
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        onclick="openPhoto(this)">
+
+                        ↗
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PHOTO 2 -->
+
+            <article class="photo-card sports">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
+                    alt="Sports car">
+
+                <div class="photo-overlay">
+
+                    <div>
+
+                        <span>
+                            SPORTS
+                        </span>
+
+                        <h3>
+                            Speed
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        onclick="openPhoto(this)">
+
+                        ↗
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PHOTO 3 -->
+
+            <article class="photo-card jdm">
+
+                <img
+                    src="https://images.unsplash.com/photo-1558981806-ec527fa84c39"
+                    alt="Japanese car">
+
+                <div class="photo-overlay">
+
+                    <div>
+
+                        <span>
+                            JDM
+                        </span>
+
+                        <h3>
+                            Japanese Spirit
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        onclick="openPhoto(this)">
+
+                        ↗
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PHOTO 4 -->
+
+            <article class="photo-card classic">
+
+                <img
+                    src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"
+                    alt="Classic car">
+
+                <div class="photo-overlay">
+
+                    <div>
+
+                        <span>
+                            CLASSIC
+                        </span>
+
+                        <h3>
+                            Timeless
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        onclick="openPhoto(this)">
+
+                        ↗
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PHOTO 5 -->
+
+            <article class="photo-card suv">
+
+                <img
+                    src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b"
+                    alt="SUV">
+
+                <div class="photo-overlay">
+
+                    <div>
+
+                        <span>
+                            SUV
+                        </span>
+
+                        <h3>
+                            Adventure
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        onclick="openPhoto(this)">
+
+                        ↗
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PHOTO 6 -->
+
+            <article class="photo-card supercar">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a"
+                    alt="Supercar">
+
+                <div class="photo-overlay">
+
+                    <div>
+
+                        <span>
+                            SUPERCAR
+                        </span>
+
+                        <h3>
+                            Performance
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        onclick="openPhoto(this)">
+
+                        ↗
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PHOTO 7 -->
+
+            <article class="photo-card sports">
+
+                <img
+                    src="https://images.unsplash.com/photo-1493238792000-8113da705763"
+                    alt="Sports car">
+
+                <div class="photo-overlay">
+
+                    <div>
+
+                        <span>
+                            SPORTS
+                        </span>
+
+                        <h3>
+                            Street Machine
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        onclick="openPhoto(this)">
+
+                        ↗
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PHOTO 8 -->
+
+            <article class="photo-card luxury">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555215695-3004980ad54e"
+                    alt="Premium car">
+
+                <div class="photo-overlay">
+
+                    <div>
+
+                        <span>
+                            LUXURY
+                        </span>
+
+                        <h3>
+                            Prestige
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        onclick="openPhoto(this)">
+
+                        ↗
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PHOTO 9 -->
+
+            <article class="photo-card jdm">
+
+                <img
+                    src="https://images.unsplash.com/photo-1542282088-fe8426682b8f"
+                    alt="JDM car">
+
+                <div class="photo-overlay">
+
+                    <div>
+
+                        <span>
+                            JDM
+                        </span>
+
+                        <h3>
+                            Street Culture
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        onclick="openPhoto(this)">
+
+                        ↗
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PHOTO 10 -->
+
+            <article class="photo-card supercar">
+
+                <img
+                    src="https://images.unsplash.com/photo-1553440569-bcc63803a83d"
+                    alt="Supercar">
+
+                <div class="photo-overlay">
+
+                    <div>
+
+                        <span>
+                            SUPERCAR
+                        </span>
+
+                        <h3>
+                            Raw Power
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        onclick="openPhoto(this)">
+
+                        ↗
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PHOTO MODAL
+    ========================== -->
+
+    <div class="photo-modal"
+         id="photoModal">
+
+        <button class="close-modal"
+                onclick="closePhoto()">
+
+            ×
+
+        </button>
+
+
+        <img id="modalImage"
+             src=""
+             alt="Selected car">
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="gallery-footer">
+
+        <h2>
+            CAR<span>VERSE</span>
+        </h2>
+
+
+        <p>
+            WHERE CARS MEET PHOTOGRAPHY.
+        </p>
+
+
+        <small>
+            © 2026 CarVerse
+        </small>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```

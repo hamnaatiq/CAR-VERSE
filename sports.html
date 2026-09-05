@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarVerse | Sports Cars</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sports.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="sports-navbar">
+
+        <a href="home.html" class="sports-logo">
+            CAR<span>VERSE</span>
+        </a>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="home.html#models">Models</a>
+            <a href="sports.html" class="active">Sports</a>
+        </nav>
+
+        <a href="home.html#models" class="back-btn">
+            ← Models
+        </a>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="sports-hero">
+
+        <div class="sports-hero-content">
+
+            <p>SPORTS COLLECTION</p>
+
+            <h1>
+                BORN<br>
+                <span>TO PERFORM.</span>
+            </h1>
+
+            <p class="hero-description">
+                Experience machines engineered for speed,
+                precision and pure driving emotion.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SPORTS CARS -->
+
+    <section class="sports-cars">
+
+        <div class="page-heading">
+
+            <p>THE COLLECTION</p>
+
+            <h2>
+                PERFORMANCE <span>ICONS</span>
+            </h2>
+
+        </div>
+
+
+        <div class="sports-grid">
+
+
+            <!-- PORSCHE -->
+
+            <article class="sports-card">
+
+                <div class="sports-image porsche"></div>
+
+                <div class="sports-content">
+
+                    <p class="brand">PORSCHE</p>
+
+                    <h3>911 Carrera</h3>
+
+                    <p class="description">
+                        An automotive icon combining timeless
+                        design with exceptional performance.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>3.0L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>379 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>293</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Porsche 911 Carrera')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- BMW -->
+
+            <article class="sports-card">
+
+                <div class="sports-image bmw"></div>
+
+                <div class="sports-content">
+
+                    <p class="brand">BMW</p>
+
+                    <h3>M4 Competition</h3>
+
+                    <p class="description">
+                        Aggressive styling and incredible
+                        performance define this modern M car.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>3.0L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>503 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>290</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('BMW M4 Competition')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- NISSAN -->
+
+            <article class="sports-card">
+
+                <div class="sports-image gtr"></div>
+
+                <div class="sports-content">
+
+                    <p class="brand">NISSAN</p>
+
+                    <h3>GT-R</h3>
+
+                    <p class="description">
+                        Japan's legendary performance machine,
+                        built to deliver incredible acceleration.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>3.8L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>565 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>315</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Nissan GT-R')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- SUPRA -->
+
+            <article class="sports-card">
+
+                <div class="sports-image supra"></div>
+
+                <div class="sports-content">
+
+                    <p class="brand">TOYOTA</p>
+
+                    <h3>GR Supra</h3>
+
+                    <p class="description">
+                        A modern Japanese sports car created
+                        for drivers who love performance.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>3.0L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>382 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>250</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Toyota GR Supra')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CORVETTE -->
+
+            <article class="sports-card">
+
+                <div class="sports-image corvette"></div>
+
+                <div class="sports-content">
+
+                    <p class="brand">CHEVROLET</p>
+
+                    <h3>Corvette C8</h3>
+
+                    <p class="description">
+                        A mid-engine American sports car
+                        designed for extraordinary performance.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>6.2L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>490 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>312</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Chevrolet Corvette C8')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- MUSTANG -->
+
+            <article class="sports-card">
+
+                <div class="sports-image mustang"></div>
+
+                <div class="sports-content">
+
+                    <p class="brand">FORD</p>
+
+                    <h3>Mustang GT</h3>
+
+                    <p class="description">
+                        An American performance icon with
+                        unmistakable character and power.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>5.0L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>480 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>250</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Ford Mustang GT')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUOTE -->
+
+    <section class="sports-quote">
+
+        <p>
+            "Performance is not just about speed.
+            It's about the feeling behind the wheel."
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="sports-footer">
+
+        <h2>
+            CAR<span>VERSE</span>
+        </h2>
+
+        <p>
+            WHERE CARS MEET PHOTOGRAPHY.
+        </p>
+
+        <small>
+            © 2026 CarVerse
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

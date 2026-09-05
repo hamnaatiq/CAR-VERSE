@@ -1,0 +1,557 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CarVerse | Supercars</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="supercars.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="super-navbar">
+
+        <a href="home.html" class="super-logo">
+            CAR<span>VERSE</span>
+        </a>
+
+
+        <nav>
+
+            <a href="home.html">
+                Home
+            </a>
+
+            <a href="home.html#models">
+                Models
+            </a>
+
+            <a href="supercars.html" class="active">
+                Supercars
+            </a>
+
+        </nav>
+
+
+        <a href="home.html#models"
+           class="back-btn">
+
+            ← Models
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="super-hero">
+
+        <div class="super-hero-content">
+
+            <p>
+                SUPERCAR COLLECTION
+            </p>
+
+
+            <h1>
+
+                BORN<br>
+
+                <span>TO PERFORM.</span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                Explore extraordinary machines created
+                for breathtaking speed, precision and
+                unforgettable driving experiences.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         COLLECTION
+    ========================== -->
+
+    <section class="super-cars">
+
+
+        <div class="page-heading">
+
+            <p>
+                THE COLLECTION
+            </p>
+
+
+            <h2>
+
+                SUPERCAR <span>ICONS</span>
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="super-grid">
+
+
+
+            <!-- =========================
+                 FERRARI
+            ========================== -->
+
+            <article class="super-card">
+
+                <div class="super-image ferrari"></div>
+
+
+                <div class="super-content">
+
+                    <p class="brand">
+                        FERRARI
+                    </p>
+
+
+                    <h3>
+                        488 GTB
+                    </h3>
+
+
+                    <p class="description">
+
+                        A mid-engine Ferrari celebrated for
+                        its sharp handling, twin-turbo V8
+                        and unmistakable Italian character.
+
+                    </p>
+
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>3.9L</strong>
+                            <span>V8 TWIN TURBO</span>
+                        </div>
+
+                        <div>
+                            <strong>661 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>330</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+
+                    <button onclick="showCarDetails('Ferrari 488 GTB')">
+
+                        VIEW DETAILS →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================
+                 MCLAREN
+            ========================== -->
+
+            <article class="super-card">
+
+                <div class="super-image mclaren"></div>
+
+
+                <div class="super-content">
+
+                    <p class="brand">
+                        MCLAREN
+                    </p>
+
+
+                    <h3>
+                        720S
+                    </h3>
+
+
+                    <p class="description">
+
+                        A lightweight supercar engineered
+                        around extreme acceleration, agility
+                        and aerodynamic performance.
+
+                    </p>
+
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>4.0L</strong>
+                            <span>V8 TWIN TURBO</span>
+                        </div>
+
+                        <div>
+                            <strong>710 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>341</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+
+                    <button onclick="showCarDetails('McLaren 720S')">
+
+                        VIEW DETAILS →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================
+                 LAMBORGHINI
+            ========================== -->
+
+            <article class="super-card">
+
+                <div class="super-image huracan"></div>
+
+
+                <div class="super-content">
+
+                    <p class="brand">
+                        LAMBORGHINI
+                    </p>
+
+
+                    <h3>
+                        Huracán
+                    </h3>
+
+
+                    <p class="description">
+
+                        A dramatic V10 supercar combining
+                        aggressive styling with thrilling
+                        naturally aspirated performance.
+
+                    </p>
+
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>5.2L</strong>
+                            <span>V10</span>
+                        </div>
+
+                        <div>
+                            <strong>631 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>325</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+
+                    <button onclick="showCarDetails('Lamborghini Huracán')">
+
+                        VIEW DETAILS →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================
+                 PORSCHE
+            ========================== -->
+
+            <article class="super-card">
+
+                <div class="super-image porsche"></div>
+
+
+                <div class="super-content">
+
+                    <p class="brand">
+                        PORSCHE
+                    </p>
+
+
+                    <h3>
+                        911 Turbo S
+                    </h3>
+
+
+                    <p class="description">
+
+                        A legendary performance car offering
+                        blistering acceleration, precision
+                        handling and everyday usability.
+
+                    </p>
+
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>3.7L</strong>
+                            <span>FLAT-6 TURBO</span>
+                        </div>
+
+                        <div>
+                            <strong>640 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>320</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+
+                    <button onclick="showCarDetails('Porsche 911 Turbo S')">
+
+                        VIEW DETAILS →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================
+                 BUGATTI
+            ========================== -->
+
+            <article class="super-card">
+
+                <div class="super-image bugatti"></div>
+
+
+                <div class="super-content">
+
+                    <p class="brand">
+                        BUGATTI
+                    </p>
+
+
+                    <h3>
+                        Chiron
+                    </h3>
+
+
+                    <p class="description">
+
+                        An engineering masterpiece created
+                        around extraordinary power, luxury
+                        and world-class speed.
+
+                    </p>
+
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>8.0L</strong>
+                            <span>W16 QUAD TURBO</span>
+                        </div>
+
+                        <div>
+                            <strong>1,479 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>420+</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+
+                    <button onclick="showCarDetails('Bugatti Chiron')">
+
+                        VIEW DETAILS →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================
+                 ASTON MARTIN
+            ========================== -->
+
+            <article class="super-card">
+
+                <div class="super-image aston"></div>
+
+
+                <div class="super-content">
+
+                    <p class="brand">
+                        ASTON MARTIN
+                    </p>
+
+
+                    <h3>
+                        Vantage
+                    </h3>
+
+
+                    <p class="description">
+
+                        A beautifully balanced sports car
+                        combining British elegance with
+                        serious performance.
+
+                    </p>
+
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>4.0L</strong>
+                            <span>V8 TWIN TURBO</span>
+                        </div>
+
+                        <div>
+                            <strong>656 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>325</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+
+                    <button onclick="showCarDetails('Aston Martin Vantage')">
+
+                        VIEW DETAILS →
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUOTE
+    ========================== -->
+
+    <section class="super-quote">
+
+        <p>
+
+            "Speed is not just about how fast
+            you go. It's about how you feel."
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="super-footer">
+
+
+        <h2>
+
+            CAR<span>VERSE</span>
+
+        </h2>
+
+
+        <p>
+
+            WHERE CARS MEET PHOTOGRAPHY.
+
+        </p>
+
+
+        <small>
+
+            © 2026 CarVerse
+
+        </small>
+
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+```

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarVerse | JDM Icons</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jdm.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="jdm-navbar">
+
+        <a href="home.html" class="jdm-logo">
+            CAR<span>VERSE</span>
+        </a>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="home.html#models">Models</a>
+            <a href="jdm.html" class="active">JDM</a>
+        </nav>
+
+        <a href="home.html#models" class="back-btn">
+            ← Models
+        </a>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="jdm-hero">
+
+        <div class="jdm-hero-content">
+
+            <p>JAPANESE DOMESTIC MARKET</p>
+
+            <h1>
+                JAPANESE<br>
+                <span>ICONS.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover the legendary machines that shaped
+                Japanese automotive culture and performance.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- JDM COLLECTION -->
+
+    <section class="jdm-cars">
+
+        <div class="page-heading">
+
+            <p>THE COLLECTION</p>
+
+            <h2>
+                JDM <span>LEGENDS</span>
+            </h2>
+
+        </div>
+
+
+        <div class="jdm-grid">
+
+
+            <!-- SKYLINE -->
+
+            <article class="jdm-card">
+
+                <div class="jdm-image skyline"></div>
+
+                <div class="jdm-content">
+
+                    <p class="brand">NISSAN</p>
+
+                    <h3>Skyline GT-R R34</h3>
+
+                    <p class="description">
+                        One of the most iconic Japanese performance
+                        cars, famous for its legendary RB26 engine.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>2.6L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>276 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>250</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Nissan Skyline GT-R R34')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- RX7 -->
+
+            <article class="jdm-card">
+
+                <div class="jdm-image rx7"></div>
+
+                <div class="jdm-content">
+
+                    <p class="brand">MAZDA</p>
+
+                    <h3>RX-7 FD</h3>
+
+                    <p class="description">
+                        A lightweight Japanese sports car powered
+                        by Mazda's legendary rotary engine.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>1.3L</strong>
+                            <span>ROTARY</span>
+                        </div>
+
+                        <div>
+                            <strong>276 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>250</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Mazda RX-7 FD')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- NSX -->
+
+            <article class="jdm-card">
+
+                <div class="jdm-image nsx"></div>
+
+                <div class="jdm-content">
+
+                    <p class="brand">HONDA</p>
+
+                    <h3>NSX</h3>
+
+                    <p class="description">
+                        A precision-engineered Japanese supercar
+                        inspired by racing technology.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>3.0L</strong>
+                            <span>V6 ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>270 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>270</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Honda NSX')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- EVO -->
+
+            <article class="jdm-card">
+
+                <div class="jdm-image evo"></div>
+
+                <div class="jdm-content">
+
+                    <p class="brand">MITSUBISHI</p>
+
+                    <h3>Lancer Evolution IX</h3>
+
+                    <p class="description">
+                        A rally-bred performance sedan built around
+                        Mitsubishi's legendary AWD system.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>2.0L</strong>
+                            <span>TURBO</span>
+                        </div>
+
+                        <div>
+                            <strong>286 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>250</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Mitsubishi Lancer Evolution IX')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- WRX -->
+
+            <article class="jdm-card">
+
+                <div class="jdm-image wrx"></div>
+
+                <div class="jdm-content">
+
+                    <p class="brand">SUBARU</p>
+
+                    <h3>WRX STI</h3>
+
+                    <p class="description">
+                        A rally-inspired icon known for its boxer
+                        engine and symmetrical all-wheel drive.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>2.5L</strong>
+                            <span>BOXER</span>
+                        </div>
+
+                        <div>
+                            <strong>305 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>255</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Subaru WRX STI')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- AE86 -->
+
+            <article class="jdm-card">
+
+                <div class="jdm-image ae86"></div>
+
+                <div class="jdm-content">
+
+                    <p class="brand">TOYOTA</p>
+
+                    <h3>AE86 Trueno</h3>
+
+                    <p class="description">
+                        A lightweight rear-wheel-drive icon that
+                        became a legend in Japanese car culture.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>1.6L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>128 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>200</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Toyota AE86 Trueno')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUOTE -->
+
+    <section class="jdm-quote">
+
+        <p>
+            "Built in Japan. Driven by passion.
+            Remembered as legends."
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="jdm-footer">
+
+        <h2>
+            CAR<span>VERSE</span>
+        </h2>
+
+        <p>
+            WHERE CARS MEET PHOTOGRAPHY.
+        </p>
+
+        <small>
+            © 2026 CarVerse
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

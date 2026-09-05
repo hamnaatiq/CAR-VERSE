@@ -1,0 +1,419 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarVerse | Classic Cars</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="classic.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="classic-navbar">
+
+        <a href="home.html" class="classic-logo">
+            CAR<span>VERSE</span>
+        </a>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="home.html#models">Models</a>
+            <a href="classic.html" class="active">Classic</a>
+        </nav>
+
+        <a href="home.html#models" class="back-btn">
+            ← Models
+        </a>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="classic-hero">
+
+        <div class="classic-hero-content">
+
+            <p>CLASSIC COLLECTION</p>
+
+            <h1>
+                EVERYDAY<br>
+                <span>CLASSICS.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover the cars that have become familiar
+                favorites on roads around the world.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COLLECTION
+    ========================== -->
+
+    <section class="classic-cars">
+
+        <div class="page-heading">
+
+            <p>THE COLLECTION</p>
+
+            <h2>
+                CLASSIC <span>RIDES</span>
+            </h2>
+
+        </div>
+
+
+        <div class="classic-grid">
+
+
+            <!-- =========================
+                 TOYOTA COROLLA GRANDE
+            ========================== -->
+
+            <article class="classic-card">
+
+                <div class="classic-image grande"></div>
+
+                <div class="classic-content">
+
+                    <p class="brand">TOYOTA</p>
+
+                    <h3>Corolla Grande</h3>
+
+                    <p class="description">
+                        A popular premium sedan known for its
+                        comfortable interior, practical design
+                        and smooth everyday driving experience.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>1.8L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>138 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>180</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Toyota Corolla Grande')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 HONDA CIVIC
+            ========================== -->
+
+            <article class="classic-card">
+
+                <div class="classic-image civic"></div>
+
+                <div class="classic-content">
+
+                    <p class="brand">HONDA</p>
+
+                    <h3>Civic</h3>
+
+                    <p class="description">
+                        A stylish sedan combining modern design,
+                        comfortable driving and responsive
+                        performance for everyday journeys.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>1.5L</strong>
+                            <span>TURBO</span>
+                        </div>
+
+                        <div>
+                            <strong>176 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>200</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Honda Civic')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 TOYOTA CAMRY
+            ========================== -->
+
+            <article class="classic-card">
+
+                <div class="classic-image camry"></div>
+
+                <div class="classic-content">
+
+                    <p class="brand">TOYOTA</p>
+
+                    <h3>Camry</h3>
+
+                    <p class="description">
+                        A refined sedan offering a comfortable
+                        ride, sophisticated styling and reliable
+                        performance.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>2.5L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>203 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>210</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Toyota Camry')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 HONDA ACCORD
+            ========================== -->
+
+            <article class="classic-card">
+
+                <div class="classic-image accord"></div>
+
+                <div class="classic-content">
+
+                    <p class="brand">HONDA</p>
+
+                    <h3>Accord</h3>
+
+                    <p class="description">
+                        A sophisticated sedan combining elegant
+                        styling, comfortable interiors and
+                        enjoyable road performance.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>1.5L</strong>
+                            <span>TURBO</span>
+                        </div>
+
+                        <div>
+                            <strong>192 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>208</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Honda Accord')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 TOYOTA MARK X
+            ========================== -->
+
+            <article class="classic-card">
+
+                <div class="classic-image markx"></div>
+
+                <div class="classic-content">
+
+                    <p class="brand">TOYOTA</p>
+
+                    <h3>Mark X</h3>
+
+                    <p class="description">
+                        A Japanese rear-wheel-drive sedan admired
+                        for its comfortable ride, elegant styling
+                        and V6 performance.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>2.5L</strong>
+                            <span>V6</span>
+                        </div>
+
+                        <div>
+                            <strong>203 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>210</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Toyota Mark X')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 HONDA CITY
+            ========================== -->
+
+            <article class="classic-card">
+
+                <div class="classic-image city"></div>
+
+                <div class="classic-content">
+
+                    <p class="brand">HONDA</p>
+
+                    <h3>City</h3>
+
+                    <p class="description">
+                        A practical and efficient sedan designed
+                        for comfortable city driving and everyday
+                        use.
+                    </p>
+
+                    <div class="specs">
+
+                        <div>
+                            <strong>1.5L</strong>
+                            <span>ENGINE</span>
+                        </div>
+
+                        <div>
+                            <strong>118 HP</strong>
+                            <span>POWER</span>
+                        </div>
+
+                        <div>
+                            <strong>180</strong>
+                            <span>KM/H</span>
+                        </div>
+
+                    </div>
+
+                    <button onclick="showCarDetails('Honda City')">
+                        VIEW DETAILS →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         QUOTE
+    ========================== -->
+
+    <section class="classic-quote">
+
+        <p>
+            "Some cars become classics because
+            they become part of everyday life."
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="classic-footer">
+
+        <h2>
+            CAR<span>VERSE</span>
+        </h2>
+
+        <p>
+            WHERE CARS MEET PHOTOGRAPHY.
+        </p>
+
+        <small>
+            © 2026 CarVerse
+        </small>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```

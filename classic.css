@@ -1,0 +1,603 @@
+```css
+/* =========================
+   NAVBAR
+========================= */
+
+.classic-navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(5, 5, 5, 0.92);
+
+    backdrop-filter: blur(12px);
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.classic-logo {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 24px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+.classic-logo span {
+
+    color: #e63946;
+}
+
+
+/* NAVIGATION */
+
+.classic-navbar nav {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.classic-navbar nav a {
+
+    color: #999;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.classic-navbar nav a:hover,
+.classic-navbar nav a.active {
+
+    color: white;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn {
+
+    color: #e63946;
+
+    text-decoration: none;
+
+    border: 1px solid #e63946;
+
+    padding: 10px 18px;
+
+    font-size: 11px;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+
+    background: #e63946;
+
+    color: white;
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.classic-hero {
+
+    height: 75vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 100px 8%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.20)
+        ),
+
+        url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.classic-hero-content {
+
+    max-width: 650px;
+}
+
+
+/* SMALL TITLE */
+
+.classic-hero-content > p:first-child {
+
+    color: #e63946;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+}
+
+
+/* HERO TITLE */
+
+.classic-hero h1 {
+
+    color: white;
+
+    font-size: clamp(55px, 8vw, 110px);
+
+    line-height: 0.9;
+
+    margin: 20px 0;
+}
+
+
+.classic-hero h1 span {
+
+    color: #e63946;
+}
+
+
+/* DESCRIPTION */
+
+.hero-description {
+
+    max-width: 550px;
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+
+/* =========================
+   COLLECTION SECTION
+========================= */
+
+.classic-cars {
+
+    padding: 110px 7%;
+}
+
+
+/* HEADING */
+
+.page-heading {
+
+    margin-bottom: 50px;
+}
+
+
+.page-heading p {
+
+    color: #e63946;
+
+    letter-spacing: 4px;
+
+    font-size: 11px;
+
+    margin-bottom: 10px;
+}
+
+
+.page-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 0;
+}
+
+
+.page-heading span {
+
+    color: #e63946;
+}
+
+
+
+/* =========================
+   GRID
+========================= */
+
+.classic-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+
+/* =========================
+   CAR CARD
+========================= */
+
+.classic-card {
+
+    background: #151515;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+
+.classic-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* =========================
+   CAR IMAGE
+========================= */
+
+.classic-image {
+
+    height: 350px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    transition: 0.6s;
+}
+
+
+.classic-card:hover .classic-image {
+
+    transform: scale(1.04);
+}
+
+
+
+/* =========================
+   CAR PHOTOS
+========================= */
+
+.grande {
+
+    background-image:
+    url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2");
+}
+
+
+.civic {
+
+    background-image:
+    url("https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6");
+}
+
+
+.camry {
+
+    background-image:
+    url("https://images.unsplash.com/photo-1621007947382-bb3c3994e3a4");
+}
+
+
+.accord {
+
+    background-image:
+    url("https://images.unsplash.com/photo-1619767886558-efdc259cde1a");
+}
+
+
+.markx {
+
+    background-image:
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7");
+}
+
+
+.city {
+
+    background-image:
+    url("https://images.unsplash.com/photo-1542362567-b07e54358753");
+}
+
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.classic-content {
+
+    padding: 30px;
+}
+
+
+.brand {
+
+    color: #e63946;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    margin: 0;
+}
+
+
+.classic-content h3 {
+
+    color: white;
+
+    font-size: 30px;
+
+    margin: 8px 0 15px;
+}
+
+
+.description {
+
+    color: #888;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+
+/* =========================
+   SPECIFICATIONS
+========================= */
+
+.specs {
+
+    display: flex;
+
+    gap: 35px;
+
+    margin: 25px 0;
+
+    padding: 20px 0;
+
+    border-top: 1px solid #292929;
+
+    border-bottom: 1px solid #292929;
+}
+
+
+.specs div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.specs strong {
+
+    color: white;
+
+    font-size: 15px;
+}
+
+
+.specs span {
+
+    color: #666;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =========================
+   VIEW DETAILS BUTTON
+========================= */
+
+.classic-content button {
+
+    background: none;
+
+    border: none;
+
+    padding: 0;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.classic-content button:hover {
+
+    color: #e63946;
+
+    transform: translateX(5px);
+}
+
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.classic-quote {
+
+    min-height: 300px;
+
+    padding: 60px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.classic-quote p {
+
+    max-width: 800px;
+
+    color: white;
+
+    font-size: 32px;
+
+    line-height: 1.5;
+
+    font-style: italic;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.classic-footer {
+
+    padding: 60px 7%;
+
+    text-align: center;
+
+    background: #050505;
+}
+
+
+.classic-footer h2 {
+
+    color: white;
+
+    letter-spacing: 3px;
+}
+
+
+.classic-footer h2 span {
+
+    color: #e63946;
+}
+
+
+.classic-footer p {
+
+    margin: 10px 0 25px;
+
+    color: #666;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+
+.classic-footer small {
+
+    color: #444;
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .classic-navbar nav {
+
+        display: none;
+    }
+
+
+    .classic-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .classic-image {
+
+        height: 280px;
+    }
+
+
+    .specs {
+
+        gap: 20px;
+    }
+
+
+    .classic-hero {
+
+        padding: 100px 6%;
+    }
+
+
+    .classic-cars {
+
+        padding: 80px 6%;
+    }
+
+
+    .page-heading h2 {
+
+        font-size: 35px;
+    }
+
+}
+```
